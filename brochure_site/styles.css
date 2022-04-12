@@ -1,8 +1,11 @@
-.header-container {
+#header-container {
     display: flex;
     justify-content: space-between;
 }
 
-body {
-    margin: 0;
+three-line-menu div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
 }
