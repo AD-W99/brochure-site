@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brochure Site</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="script.js" defer></script>
 </head>
-<body style="margin: 0">
+<body>
     <header>
-        <div id="header-container">
-            <img src="./brochure_site_logo.png" alt="Logo" width="100" height="100"> <!--Logo-->
+        <div class="header-container">
+            <img src="./images/brochure_site_logo.png" alt="Logo" width="100" height="100"> <!--Logo-->
             <div class="three-line-menu">
                 <div></div>
                 <div></div>
@@ -17,5 +19,64 @@
             </div>
         </div>
     </header>
+    <main>
+        <div id="banner">
+            <h1>Your Journey in Kazakhstan Starts Here</h1>
+        </div>
+        <section class="sect1">
+            <div class="left-box">
+                <h1>Explore the Heart of Central Asia</h1>
+            </div>
+            <div class="top-right-box">
+                <h3>Book a trip with us</h3>
+                <button>Click here</button>
+            </div>
+            <div class="bottom-right-box">
+                <button class="prev">&#8676;</button>
+                <button class="next">&#8677;</button>
+                <ul>
+                    <li class="slide" data-active>
+                        <img src="./images/horses_on_a_mountain.jpg" alt="Horses on a mountain"> <!--Photo by Temo Berishvili-->
+                    </li>
+                    <li class="slide">
+                        <img src="./images/horses_on_a_mountain.jpg" alt="Horses on a mountain"> <!--Photo by Temo Berishvili-->
+                    </li>
+                    <li class="slide">
+                        <img src="./images/horses_on_a_mountain.jpg" alt="Horses on a mountain"> <!--Photo by Temo Berishvili-->
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="sect2">
+            <div class="background-container">
+                <div class="tagline">
+                    <h1>We</h1>
+                    <h1>plan</h1>
+                    <h1>your</h1>
+                    <h1>trip</h1>
+                </div>
+                <div class="subtext">
+                    <p>Visit Astana, Almaty, and</p>
+                    <p>the countryside of Kazakhstan</p>
+                </div>
+            </div>
+        </section>
+        <section class="sect3">
+            <div class="rectangle"></div>
+            <div class="img-container">
+                <div>
+                    <img src="./images/astana.jpg" alt="Astana"> 
+                    <img src="./images/almaty.jpg" alt="Almaty">
+                </div>
+                <div>
+                    <img src="./images/mountains.jpg" alt="Mountains">
+                    <img src="./images/steppe.jpg" alt="Horse rider on the steppe">
+                </div>
+            </div>
+            <div class="learn-more">
+
+            </div>
+        </section>
+    </main> 
 </body>
 </html>

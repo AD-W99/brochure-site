@@ -1,11 +1,220 @@
-#header-container {
-    display: flex;
-    justify-content: space-between;
+/* Universal Styles */
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-three-line-menu div {
+/* Header Styles */
+
+header {
+    border-bottom: 1px solid #003459;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.three-line-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+.three-line-menu div {
     width: 35px;
     height: 5px;
     background-color: black;
-    margin: 6px 0;
+    margin: 3px 0;
+    border-radius: 25%;
+}
+
+/* Banner Styles */
+
+#banner {
+    height: 48rem;
+    background-image: url(./images/cami-ga737e03b5_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #003459;
+}
+
+#banner h1 {
+    margin: 0;
+    color: whitesmoke;
+    font-size: 5rem;
+    text-align: center;
+    background-color: #00171f;
+}
+
+/* Section 1 Styles */
+
+.sect1 {
+    display: grid;
+    height: 36rem;
+    width: 100%;
+    grid-template: repeat(20, 1fr) / repeat(20, 1fr);
+}
+
+.left-box h1 {
+    color: white;
+    font-size: 4em;
+    text-align: center;
+}
+
+.top-right-box h3 {
+    color: black;
+    font-size: 2em;
+    text-align: center;
+}
+
+.top-right-box button {
+    height: 25%;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    font-size: 2em;
+    color: white;
+    background-color: #00171F;
+    border-radius: 0.5em;
+}
+
+.left-box {
+    grid-area: 2 / 2 / 20 / 11;
+    background-color: #007EA7;
+}
+
+.top-right-box {
+    grid-area: 2 / 12 / 10 / 20;
+    background-color: lightgray;
+}
+
+.bottom-right-box {
+    grid-area: 11 / 12 / 20 / 20;
+    position: relative;
+}
+
+.bottom-right-box button {
+    position: absolute;
+    border: none;
+    background: none;
+    z-index: 1;
+    font-size: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bottom-right-box button:hover,
+.bottom-right-box button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bottom-right-box button:focus {
+    outline: 1px solid black;
+}
+
+.bottom-right-box button.prev {
+    left: 0.1rem;
+}
+
+.bottom-right-box button.next {
+    right: 0.1rem;
+}
+
+.bottom-right-box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.slide[data-active] {
+    opacity: 1;
+}
+
+.bottom-right-box img {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #003459;
+}
+
+/* Section 2 Styles */
+
+.background-container {
+    background-color: #00A8E8;
+    width: 100%;
+    height: 36rem;
+    display: flex;
+    justify-content: center;
+}
+
+.background-container h1 {
+    color: white;
+    font-size: 6rem;
+    margin: 0 2rem;
+}
+
+.background-container p {
+    color: white;
+    font-size: 2rem;
+    margin: 0 2rem;
+    text-align: center;
+}
+
+.tagline {
+    width: 50%;
+    align-self: center;
+}
+
+.subtext {
+    align-self: flex-end;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Section 3 Styles */
+
+.sect3 {
+    position: relative;
+    height: 48rem;
+}
+
+.rectangle {
+    position: absolute;
+    height: 80%;
+    width: 600px;
+    background-color: #007EA7;
+    left: 14rem;
+    top: 4rem;
+}
+
+.sect3 img {
+    height: 300px;
+    width: 300px;
+    margin: 1rem;
+}
+
+.img-container {
+    z-index: 1;
+    position: relative;
+    margin-top: 2rem;
+    margin-left: 14rem;
 }
