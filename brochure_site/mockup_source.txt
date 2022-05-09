@@ -1,4 +1,4 @@
-// Source of mockup design
+// Source of mockup design used for inspiration of the layout
 
 https://nicepage.com/pm/373318/mobile-application-development-website-mockup
 
